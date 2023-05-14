@@ -1,0 +1,102 @@
+    /* styl strony */
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      
+      body {
+        font-family: Arial, sans-serif;
+        font-size: 16px;
+        line-height: 1.5;
+        background-color: #fff;
+      }
+      
+      h1, h2, h3 {
+        font-weight: bold;
+        text-align: center;
+      }
+      
+      p {
+        margin: 10px 0;
+        text-align: justify;
+      }
+      
+      /* sekcja o Mazurach */
+      .section {
+        margin: 50px 0;
+        padding: 50px;
+        background-color: #eee;
+        text-align: center;
+      }
+      
+      /* sekcja o jeziorach */
+      .section--jeziora {
+        background-color: #ddd;
+      }
+      
+      /* galeria zdjęć */
+      .gallery {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 50px 0;
+      }
+      
+      .gallery__item {
+        flex: 1;
+        margin: 10px;
+      }
+      
+      .gallery__item img {
+        width: 100%;
+        height: auto;
+      }
+      
+      /* media queries */
+      @media screen and (max-width: 768px) {
+        /* sekcje */
+        .section {
+          padding: 20px;
+        }
+        
+        /* galeria */
+        .gallery__item {
+          flex-basis: calc(50% - 20px);
+        }
+      }
+      
+      @media screen and (max-width: 480px) {
+        /* sekcje */
+        .section {
+          padding: 10px;
+        }
+        
+        /* galeria */
+        .gallery__item {
+          flex-basis: 100%;
+        }
+      }
+
+      section {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        padding: 2rem;
+      }
+
+      .gallery {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        gap: 1rem;
+        margin: 2rem 0;
+      }
+  
+      .gallery img {
+        width: 100%;
+        max-width: 400px;
+        height: auto;
+      }
